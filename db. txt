@@ -1,0 +1,11 @@
+run this query for database
+
+  DROP TABLE IF EXISTS `notes`;
+
+CREATE TABLE `notes` (
+    `sno` INT NOT NULL AUTO_INCREMENT,
+    `title` VARCHAR(255) NOT NULL,
+    `description` TEXT NOT NULL,
+    `priority` VARCHAR(10) NOT NULL DEFAULT 'Medium',
+    PRIMARY KEY (`sno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
